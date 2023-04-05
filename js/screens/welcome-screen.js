@@ -30,7 +30,7 @@ export const welcomeScreen = () => {
    ButtonImg.alt = 'Choose button to go to the next step';
    chooseBtn.appendChild(ButtonImg);
 
-   //appending
+   //display elements
    welcomeStepWrapper.append(titleTop, titleBottom, swordsImg, addInfo, chooseBtn);
 
    return welcomeStepWrapper;
