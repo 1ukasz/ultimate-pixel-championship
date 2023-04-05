@@ -1,5 +1,6 @@
 export const welcomeScreen = () => {
    const welcomeStepWrapper = document.createElement('div');
+   welcomeStepWrapper.classList.add('main-container');
    //header
    const titleTop = document.createElement('h2');
    const titleBottom = document.createElement('h2');
@@ -12,6 +13,7 @@ export const welcomeScreen = () => {
 
    //swords icon
    const swordsImg = document.createElement('img');
+   swordsImg.classList.add('sword-img');
    swordsImg.src = 'src/Swords.png';
    swordsImg.alt = 'Swords image in pixel art';
 
@@ -21,10 +23,12 @@ export const welcomeScreen = () => {
    addInfo.innerText = 'Fill out the form to sign up for upcoming tournee.';
 
    //button
-
    const chooseBtn = document.createElement('button');
    chooseBtn.classList.add('choose-btn');
-   chooseBtn.innerText = 'Choose';
+   const ButtonImg = document.createElement('img');
+   ButtonImg.src = 'src/Primary.png';
+   ButtonImg.alt = 'Choose button to go to the next step';
+   chooseBtn.appendChild(ButtonImg);
 
    //appending
    welcomeStepWrapper.appendChild(titleTop);
