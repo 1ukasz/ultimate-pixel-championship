@@ -30,7 +30,7 @@ export const welcomeScreen = () => {
    welcomeStepWrapper.appendChild(titleTop);
    welcomeStepWrapper.appendChild(titleBottom);
    welcomeStepWrapper.appendChild(swordsImg);
-   e;
    welcomeStepWrapper.appendChild(addInfo);
+   welcomeStepWrapper.appendChild(chooseBtn);
    return welcomeStepWrapper;
 };
